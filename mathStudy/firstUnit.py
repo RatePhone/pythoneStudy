@@ -1,4 +1,18 @@
-from vector_drawing import *
-dino_vectors= [(6,4),(3,1),(1,2),(-1,5),(-2,5),(-3,4),(-4,4)]
+from math import sqrt
 
-draw(Points(*dino_vectors))
+# 计算平方根
+
+
+def length(v):
+    return sqrt(v[0]**2 + v[1]**2)
+
+
+print(length((3, 4)))
+
+
+def add(*vectors):
+    return (sum([v[0] for v in vectors]), sum([v[1] for v in vectors]))
+
+
+print(add((1, 2), (2, 4), (3, 6), (4, 8)))
+
